@@ -85,7 +85,7 @@ Note: venue.service.ts still needs:
 
 Given more time, the immediate next priorities would be:
 
-1. **Complete `VenuesService` validation logi and undefined type checksc** — apply the business rules and return structured `ValidationResult`
+1. **Complete `VenuesService` validation logic and undefined type checks** — apply the business rules and return structured `ValidationResult`
 2. **Fix date filter** — currently compares ISO date string against `availableDays` (day names); needs conversion from date → day-of-week
 3. **Reset venues on each search** — `VenuesService` currently mutates `this.venues` in place; should filter from a fresh copy each call
 4. **Implement frontend components** — `SearchBar` with loading state, `FilterDisplay` as tag chips, `VenueCard` with key venue details, `ValidationAlert` with warning/error distinction
